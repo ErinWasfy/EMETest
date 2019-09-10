@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
 RUN dism.exe /online /enable-feature /all /featurename:iis-webserber /NoRestart
 
